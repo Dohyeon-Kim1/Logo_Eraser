@@ -3,15 +3,14 @@ import importlib
 import numpy as np
 from tqdm import tqdm
 
-from models.e2fgvi.e2fgvi_hq import InpaintGenerator
+from model.e2fgvi.e2fgvi_hq import InpaintGenerator
 from utils.e2fgvi import to_tensors, get_ref_index
 from utils.yolov7 import attempt_load, letterbox, non_max_suppression, scale_coords, xyxy2xywh
 
 
 class LogoVideoInpainting:
   def __init__(self, device, inpaint_ckpt):
-    net = importlib.import_module('model.e2fgvi_hq')
-    model = net.InpaintGenerator().to(device)
+    model = InpaintGenerator().to(device)
     ckpt_path = inpaint_ckpt
     data = torch.load(ckpt_path, map_location = device)
     model.load_state_dict(data)
