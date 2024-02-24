@@ -2,7 +2,7 @@ import argparse
 import cv2
 import numpy as np
 import os
-from models.load import YoloDetection, LogoVideoInpainting
+from model.load import YoloDetection, LogoVideoInpainting
 from utils.data import extract_frames, read_mask
 
 def main(args):
