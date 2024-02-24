@@ -39,12 +39,12 @@ class LogoVideoInpainting:
       selected_masks = masks[:1, neighbor_ids+ref_ids, :, :, :]
       with torch.no_grad():
           masked_imgs = selected_imgs*(1-selected_masks)       # 마스크된 이미지 뽑기
-          masked_imgs = masked_imgs.permute(0,1,2,4,3)
+          # masked_imgs = masked_imgs.permute(0,1,2,4,3)
           pred_img, _ = self.model(masked_imgs, len(neighbor_ids))  # 모델 돌리기
 
           # 돌린 모델 후처리
           pred_img = (pred_img + 1) / 2 #->0~1
-          pred_img = pred_img.cpu().permute(0, 3, 2, 1).numpy() * 255  # 토치만 채널이 맨 앞에 있고 나머지는 채널이 맨 뒤. H,W,C 따라서 순서 바꿔주기 + 0~255
+          pred_img = pred_img.cpu().permute(0, 2, 3, 1).numpy() * 255  # 토치만 채널이 맨 앞에 있고 나머지는 채널이 맨 뒤. H,W,C 따라서 순서 바꿔주기 + 0~255
 
           for i in range(len(neighbor_ids)):
               idx = neighbor_ids[i]
