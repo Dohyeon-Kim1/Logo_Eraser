@@ -6,8 +6,7 @@
 !mim install mmcv-full
 ```
 ## Demo
-<video width="320" height="240" controls>
-  <source src="./figs/your_video.mp4" type="video/mp4">
+![teaser](./figs/teaser.gif)
 # Checkpoint
 ```
 %cd Logo_Eraser
