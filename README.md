@@ -9,7 +9,7 @@
 ## Demo
 | Before | After |
 | ------ | ----- |
-| <img src="https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/8910ad65-958a-4072-9b5f-80d306cbd6cd" width="200" height="200"> | <img src="https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/5a921ae5-1fca-4860-8a32-835ee5f8c569" width="200" height="200"> |
+| <img src="https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/5a921ae5-1fca-4860-8a32-835ee5f8c569" width="200" height="200"> | <img src="https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/8910ad65-958a-4072-9b5f-80d306cbd6cd" width="200" height="200"> |
 
 # Checkpoint
 ```
