@@ -6,10 +6,8 @@
 !mim install mmcv-full
 ```
 ## Demo
-![teaser](./figs/)
-https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/b3ab3a4f-25c6-4ce4-bcce-c308524bdbcb
-
-https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/359cde88-2f2f-4860-8560-163359c9d26f
+<video width="320" height="240" controls>
+  <source src="./figs/your_video.mp4" type="video/mp4">
 # Checkpoint
 ```
 %cd Logo_Eraser
