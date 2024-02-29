@@ -5,9 +5,10 @@
 !pip install openmim
 !mim install mmcv-full
 ```
-# Before
+## Demo
+![teaser](./figs/teaser.gif)
 https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/b3ab3a4f-25c6-4ce4-bcce-c308524bdbcb
-# After
+
 https://github.com/Dohyeon-Kim1/Logo_Eraser/assets/63627639/359cde88-2f2f-4860-8560-163359c9d26f
 # Checkpoint
 ```
